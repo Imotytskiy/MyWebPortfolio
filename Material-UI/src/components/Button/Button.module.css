@@ -1,0 +1,14 @@
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputStyle {
+  margin-right: '10px';
+  width: 30%;
+}
+
+

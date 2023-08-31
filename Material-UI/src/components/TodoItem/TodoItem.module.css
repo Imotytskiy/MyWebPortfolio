@@ -1,0 +1,9 @@
+
+.inputText {
+  text-decoration: none;
+}
+
+.inputTextCrossed {
+  text-decoration: line-through;
+  color: red;
+}
