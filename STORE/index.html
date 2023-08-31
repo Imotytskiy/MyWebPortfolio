@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW 25. LocalStorage</title>  
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="form.css" />
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="root">
+      <div id="firstRow">
+        <section id="accordion-container">
+          <button id ="alldelete" class="block button delete">BИДАЛИТИ ВСЕ</button>
+          <button id ="reload" class="block button reload">ПОВЕРНУТИСЯ</button>
+        </section>
+        <section id="catContainer">
+        </section>
+        <section id="prodContainer"></section>
+        <section id="descrContainer"></section>
+      </div>
+      <div id="secondRow">
+        <section id="formContainer">
+        <div id="wrapper">
+          <form  id="buyerform" autocomplete="on" action="">    
+            <h3>ОФОРМЛЕННЯ ЗАМОВЛЕННЯ</h3>
+            <div>
+            <label for="validationCustom01" class="form-label" >Прізвище</label>
+            <input type="text" name="surname"  id="surname" placeholder="Введіть прізвище"  value="" required>
+            <label for="validationCustom02" class="form-label">Ім'я</label>
+            <input type="text"  name="name" id="name" placeholder="Введіть ім'я" value=""  required>
+            </div>
+            <div>
+            <label for="validationCustom03" class="form-label">По-батькові</label>
+            <input type="text" name="father-name"  id="father-name" placeholder="Введіть по-батькові" value="" required> 
+            <div class="valid-feedback">
+            <div  id="first-div-form">
+              <label for="city">
+                Місто (вибір зі списку)
+                <select name="city" id="city">
+                  <option value="Вінниця">Вінниця</option>
+                  <option value="Дніпро">Дніпро</option>
+                  <option value="Донецьк">Донецьк</option>
+                  <option value="Житомир">Житомир</option>
+                  <option value="Запоріжжя">Запоріжжя</option>
+                  <option value="Івано-Франківськ">Івано-Франківськ</option>
+                  <option value="Київ" selected>Київ</option>
+                  <option value="Кропивницький">Кропивницький</option>
+                  <option value="Луганськ">Луганськ</option>
+                  <option    value="Луцьк">Луцьк</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-check">
+                <input  type="checkbox" value="Обрано склад" id="warehouse" checked>
+                <label  for="warehouse">
+                    Склад Нової пошти для надсилання
+                </label>
+                <input name="number-of-post" id="newPost" type="number" placeholder="Розблокуйте" value="" required disabled>
+              </div>
+            <div>
+                <input
+                  type="radio"
+                  name="paymentmethod"
+                  id="afterPay1"
+                  value="Оплата після доставки"
+                />
+                <label  for="afterPay1">
+                  Післяплати
+                </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="paymentmethod"
+                  id="afterPay2"
+                  value="Оплата банківською картою"
+                  checked
+                />
+                <label  for="afterPay2">
+                  Оплата банківської картою
+                </label>
+              </div>
+            <div>
+              <label for="customRange2">Кількість товару:&nbsp;<span id="rangeValue">1</span></label>
+            </div>
+            <div>
+              <input
+                name="quantity"
+                type="range"
+                min="1"
+                max="20"
+                value="1"
+                id="customRange2"
+                aria-invalid=""
+              />
+            </div>
+            <div>
+            <label  for="comment">
+                Коментар до замовлення</label>
+            </div>
+            <textarea
+              name="comment"
+              type="text"
+              placeholder=" не більше 50 символів"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              maxlength="50"
+            ></textarea>
+            <div>
+                <button class="block button" type="submit">ПРИЙНЯТИ</button>
+            </div>
+            <div id="formPost">
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

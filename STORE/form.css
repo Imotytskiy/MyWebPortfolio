@@ -1,0 +1,121 @@
+* {
+  margin-top: 10px;
+}
+#accordion {
+  display: none;
+}
+
+#wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: content;
+}
+
+h3 {
+  margin-top: 15px;
+  margin: 0 auto;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+#first-div-form {
+  flex-grow: 1;
+}
+
+.input-range {
+  margin-left: 25px;
+  margin-top: 8px;
+}
+
+#plus-row {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+textarea {
+  width: 440px;
+}
+
+.block {
+  padding: 10px 40px;
+  margin: 10px 20px;
+  background: grey;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  transition-duration: 0.4s;
+  display: block;
+}
+
+.button {
+  display: block;
+  background-color: #00d2ff;
+  margin-top: 10px;
+  width: 170px;
+}
+
+.delete {
+  width: auto;
+  text-align: center;
+  margin: auto;
+  background: red;
+  margin-bottom: 10px;
+}
+.reload {
+  width: auto;
+  text-align: center;
+  margin: auto;
+  background: green;
+}
+.button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.long-range {
+  width: 200px;
+}
+
+input:invalid {
+  background: lightpink;
+}
+
+input:valid {
+  background: lightgreen;
+}
+
+textarea:invalid {
+  background: lightpink;
+}
+
+textarea:valid {
+  background: lightgreen;
+}
+
+#formPost {
+  display: block;
+  padding: 5px 10px;
+  margin: 10px 10px;
+  color: blue;
+  font-size: large;
+  text-align: left;
+}
+
+.formarray {
+  text-align: left;
+  border: 2px solid #ccc;
+  padding: 5px;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: justify;
+}
