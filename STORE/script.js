@@ -66,7 +66,7 @@ const findStorageOrder = (count) => {
       return false;
     }
   }
-  return;
+  return true;
 };
 
 orderElement.addEventListener("click", function (event) {
@@ -105,7 +105,7 @@ orderElement.addEventListener("click", function (event) {
       if (panel.style.display === "block") {
         panel.style.display = "none";
       }
-      localStorage.removeItem(closestElementId + "order");
+      localStorage.removeItem(closestElementId);
       closestElement.remove();
     });
   }
@@ -113,7 +113,7 @@ orderElement.addEventListener("click", function (event) {
   let idButton = "";
   function createAccordionSections(count) {
     for (let i = 0; i < count; i++) {
-      if (localStorage.key.includes("order")) {
+      if (localStorage.key(i).includes("order")) {
         let key = localStorage.key(i);
         const forValue = JSON.parse(localStorage.getItem(key));
         idButton = forValue.key;
@@ -339,25 +339,3 @@ makeUpperCaseForName(inputFatherName);
     }
   }
 })();
-////////////////////////////////////////////////////////////////
-// function setCookie(name, surname) {
-//   var expirationDate = new Date();
-//   expirationDate.setTime(expirationDate.getTime() + 24 * 60 * 60 * 1000); // 24 hours in milliseconds
-//   var expires = "expires=" + expirationDate.toUTCString();
-//   document.cookie = name + "=" + surname + ";" + expires + ";path=/";
-// }
-
-// if (getCookie("cookieKey")) {
-//   const cookieValue = getCookie("cookieKey");
-//   const surnameInput = document.getElementById("validationCustom01");
-//   console.log(cookieValue.substring(0, cookieValue.indexOf(" ")));
-//   surnameInput.value = cookieValue.substring(0, cookieValue.indexOf(" "));
-
-//   const nameInput = document.getElementById("validationCustom02");
-//   console.log(cookieValue.substring(cookieValue.indexOf(" ") + 1));
-//   nameInput.value = cookieValue.substring(cookieValue.indexOf(" ") + 1);
-// }
-// function deleteCookie(name) {
-//   document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
-// }
-// deleteCookie("myCookie");
