@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(227, 228, 228);
+}
+.container {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #504ac4;
+  border: white thick double;
+  border-radius: 5px;
+  color: #000;
+}
+
+.button:hover {
+  background-color: blue;
+  color: #fff;
+}
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+      html, body {
+      max-width: 1920px;
+      padding: 0;
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      }
+      h1 {
+      display: inline;
+      font-weight: 400;
+      background: -webkit-linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 46px;
+      }
+      p {
+      margin: 0 0 5px;
+      }
+      form {
+      padding: 0px;
+      margin: 150px;
+      box-shadow: 0 2px 5px #f5f5f5; 
+      background: #f5f5f5; 
+      border-radius: 12px;
+      }
+      input, textarea {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #FFFFFF;
+      border-radius: 8px;
+      }
+      input::placeholder {
+        font-family: Roboto, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #B3B3BA;
+      }
+      input:invalid {
+      border: 1px solid red;  
+      }
+      input:focus-visible{
+        outline: 1px solid #24A3FF;
+      }
+      textarea:focus-visible{
+        outline: 1px solid #24A3FF;
+      }
+      textarea::placeholder
+       {
+        font-family: Roboto, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #B3B3BA;;
+    }
+      .answer {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #B3B3BA;
+        margin-bottom: 15px;
+      }
+      button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      background: #24A3FF;
+      border-radius: 12px;
+      box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+      border-radius: 12px
+      }
+      button:hover {
+      background: #0085FF;
+      }
+      button:active {
+      background: #006CCF;
+      }
+      .contact_head{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+      .btn:hover{
+       background:#E6E6F0;
+       border-radius: 8px;
+      }     
+    </style>
+  </head>
+  <body>
+      <form action="/"> 
+        <div class="contact_head">
+        <h1>We would like to help you</h1> 
+        <a onclick="window.open('', '_self', ''); window.close();"><img class="btn" src="./icons/Close.svg" alt="button"></a>
+        </div>
+        <div>   
+            <input type="text" name="name" placeholder="Name">
+            <textarea placeholder="Message" rows="4"></textarea>
+        <p class="answer">How to answer you?</p>
+          <input type="tel" name="name" placeholder="Phone number">
+          <input type="email" name="name" placeholder="Email">
+        </div>
+        <button type="submit" href="/">Send message</button>
+      </form>
+    </div>
+  </body>
+</html>

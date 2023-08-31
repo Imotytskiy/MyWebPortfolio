@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>АДРЕСА МІСЦЕЗНАХОДЖЕННЯ ЮРИДИЧНОЇ КОМПАНІЇ</title>
+    <style>
+      /* стилі для контейнера мапи */
+      #map-container {
+        width: 100%;
+        height: 800px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1{
+        display: block;
+        margin-top: 200px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        background: #F5F5FA;
+        border-radius: 12px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+        }
+
+        .btn:hover{
+         background:#E6E6F0;
+         border-radius: 8px;
+        }
+        a {
+        text-decoration: none;
+        color: #24A3FF;
+       }
+       a:hover{
+        background: #F0145A;
+       }
+       a:active{
+        color: #F0145A;
+       }
+       h1{
+        display: block;
+       }
+       .header{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+    <h1>АДРЕСА МІСЦЕЗНАХОДЖЕННЯ ЮРИДИЧНОЇ КОМПАНІЇ</h1> <a class="btn" href="./index.html"><img class="btn" src="./icons/Close.svg" alt="button"></a>
+   </div>
+    <div id="map-container">
+    </div>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqikOtvjXGDlYzqQcoaYvRFP7te1onYv0&callback=initMap&libraries=places&v=weekly"
+    defer
+  ></script>
+    <script>
+      // ініціалізація мапи
+      function initMap() {
+        const address = "Kyiv, Mechnikova str, 14/1";
+        const mapContainer = document.getElementById("map-container");
+
+        // створення об'єкту мапи
+        const map = new google.maps.Map(mapContainer, {
+          zoom: 16,
+          center: { lat: 50.441348, lng: 30.525663 }, // координати для адреси
+        });
+
+        // створення маркера
+        const marker = new google.maps.Marker({
+          map,
+          position: { lat: 50.441348, lng: 30.525663 }, // координати для адреси
+          title: address,
+        });
+
+        // створення інформаційного вікна
+        const infoWindow = new google.maps.InfoWindow({
+          content: `<div><strong>${address}</strong></div>`,
+        });
+
+        // відкриття інформаційного вікна при кліку на маркер
+        marker.addListener("click", () => {
+          infoWindow.open(map, marker);
+        });
+      }
+    </script>
+  </body>
+</html>

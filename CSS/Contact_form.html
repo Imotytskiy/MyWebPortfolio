@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    @font-face {
+      font-family: 'Montserrat';
+      src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+    }
+  
+    body {
+      height: 100vh;
+      margin: 0 auto;
+      font-family: Montserrat, Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+    }
+
+    h1 {
+      font-weight: 400;
+      background: -webkit-linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 46px;
+    }
+
+    p {
+      margin: 0 0 5px;
+    }
+
+    form {
+      padding: 25px;
+      margin: 150px;
+      box-shadow: 0 2px 5px #f5f5f5;
+      background: #f5f5f5;
+      border-radius: 12px;
+    }
+
+    input,
+    textarea {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #FFFFFF;
+      border-radius: 8px;
+    }
+
+    input::placeholder {
+      font-family: Roboto, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #B3B3BA;
+    }
+
+    input:invalid {
+      border: 1px solid red;
+    }
+
+    input:focus-visible {
+      outline: 1px solid #24A3FF;
+    }
+
+    textarea:focus-visible {
+      outline: 1px solid #24A3FF;
+    }
+
+    textarea::placeholder {
+      font-family: Roboto, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #B3B3BA;
+      ;
+    }
+
+    .answer {
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #B3B3BA;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      background: #24A3FF;
+      border-radius: 12px;
+      box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+      border-radius: 12px
+    }
+
+    button:hover {
+      background: #0085FF;
+    }
+
+    button:active {
+      background: #006CCF;
+    }
+    .down-footer{
+      margin-top: 250px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <section class="conteiner-contact-page">
+      <header class="logo_menu">
+        <div class="logo">
+          <img src="./icons/Logo_contact.svg" alt="hlegal page contact">
+        </div>
+        <nav class="menu">
+          <div class="menu-up-contact">
+            <ul>
+              <li class="menu-lang-adress-contact"><a class="change-lang-contact active" href="#">УК</a></li>
+              <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">РУ</a></li>
+              <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">EN</a></li>
+            </ul>
+            <div>
+              <span class="menu-lang-adress-contact color-contact"> <span> &#9679;</span> &nbsp;Kyiv, Mechnikova str,
+                14/1&nbsp; <span> &#9679; </span></span>
+              <span class="menu-lang-adress-tel-contact color-contact"> 0800 211 927 <span> &#9679;</span> </span>
+            </div>
+            <div>
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                  fill="#B3B3BA" />
+              </svg>
+            </div>
+          </div>
+          <ul>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="#">about us</a></li>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="#">team</a></li>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="#services">services</a></li>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="#">publications</a></li>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="./index.html">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+  </header>
+
+  <header class="logo_menu_middle">
+    <nav class="menu">
+        <div class="menu-up-contact">
+            <ul>
+                <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">УК</a></li>
+                <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">РУ</a></li>
+                <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">EN</a></li>
+            </ul>
+            <div>
+                <span class="menu-lang-adress-contact">&#9679;&nbsp;Kyiv, Mechnikova str, 14/1&nbsp;&#9679;</span>
+                <span class="menu-lang-adress-tel-contact color-contact"> 0800 211 927 &#9679; </span>
+            </div>
+            <div>
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div class="logo">
+          <img src="./icons/Logo-contact-middle.svg" alt="icon logo with contact">
+        </div>
+        <ul class="no-dropdown">
+            <li class="main-menu-contact"><a class="middle-line-contact" href="#">about us</a></li>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="#">team</a></li>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="#services">services</a></li>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="#">publications</a></li>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="./Contact_form.html" target="_parent">contact</a>
+            </li>
+        </ul>
+    </nav>
+</header> 
+<!-- MOBILE RESOLUTION -->
+<header class="logo_menu_mobile">
+<nav class="menu">
+    <div>
+        <div class="first-block-mobile">
+        <ul>
+            <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">УК</a></li>
+            <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">РУ</a></li>
+            <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">EN</a></li>
+        </ul>
+            <div class="menu-lang-adress-contact"><span class="tel">0800 211 927</span></div>
+        </div>
+        <div class="logo">
+        <img src="./icons/Logo-contact-mobile.svg" alt="icon logo with contact">
+            <a href="./burger-page.html"> <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 10.5H25" stroke="#323264" stroke-width="2"/>
+              <path d="M7 16.5H25" stroke="#323264" stroke-width="2"/>
+              <path d="M7 22.5H25" stroke="#323264" stroke-width="2"/>
+              </svg>
+            </a>
+        </div>
+</header>
+<!-- MOBILE ROSOLUTION END -->
+
+  <section class="contact-page">
+    <div class="contact-adress">
+      <span class="contact-text-item">Kyiv, <br>
+        Mechnikova str, 14
+        <div class="footer-line-contact">
+        </div>
+      </span>
+      <span class="contact-text-item">0800 211 927
+        contact@forstudy.space <br>
+        <div class="footer-line-contact">
+        </div>
+      </span>
+      <a href="#"><img src="./icons/Facebook.svg" alt=""></a>
+    </div>
+    <form class="form-contact-page" action="/">
+      <h1>We would like to help you</h1>
+      <div>
+        <input type="text" name="name" placeholder="Name">
+        <textarea placeholder="Message" rows="4"></textarea>
+        <p class="answer">How to answer you?</p>
+        <input type="tel" name="name" placeholder="Phone number">
+        <input type="email" name="name" placeholder="Email">
+      </div>
+      <button type="submit" href="/">Send message</button>
+    </form>
+  </section>
+  <footer class="footer-position down-footer">
+    <div class="flex-footer margin60">
+      <span class="color-adr-contact menu-lang-adress color-contact">Kyiv, Mechnikova str, 14/1&nbsp;● 
+        <span class="map"><a class="map" style="text-decoration: none" href="./map.html">on map</a></span></span>
+      <span class="color-adr-contact copyright">© 2021 HLEGAL Law company, LLC</span>
+    </div>
+    <div class="menu-up-footer">
+        <img src="./icons/facebook-blue-logo.svg" alt="logo facebook">
+        <div class="menu-adress-email">
+          <span class="menu-lang-adress-tel color-tel-contact"> 0800 211 927 &#9679;</span>
+          <span class="map">contact@forstudy.space</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer-position-middle">
+    <div class="flex-footer">
+      <span class="color-adr-contact menu-lang-adress color-contact">Kyiv, Mechnikova str, 14/1&nbsp;● 
+        <span class="map"><a class="map" style="text-decoration: none" href="./map.html">on map</a></span></span>
+    </div>
+    <div class="menu-up-footer">
+        <img src="./icons/facebook-blue-logo.svg" alt="logo facebook">
+        <div>
+          <span class="menu-lang-adress-tel color-tel-contact"> 0800 211 927 &#9679;</span>
+          </a> <span class="map">contact@forstudy.space</span>
+        </div>
+      </div>
+      <span class="color-adr-contact copyright">© 2021 HLEGAL Law company, LLC</span>
+    </div>
+  </footer>
+  <!-- MOBILE RESOLUTION FOOTER -->
+  <style>
+    @media (min-width: 601px) {
+        .footer-mobile{
+        display:none; 
+    }
+   }
+    @media (max-width: 600px) {
+        .footer-position-middle {
+        display: none;
+        }
+        .footer-mobile{
+        display:block;
+        background: #F5F5FA;
+        margin: auto;
+        /* width: 375px; */
+        padding-top: 0;
+    }
+    .foot-flex{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .map-footer{
+        margin: 15px auto;
+    }
+        }
+</style>
+<footer class="footer-mobile">
+    <div class="foot-flex">
+        <div class="footer-line">
+        </div>
+        <span class="menu-lang-adress color-adr">Kyiv, Mechnikova str, 14/1</span>
+        <span class="map"><a class="map" style="text-decoration: none" href="./map.html">on map</a></span>
+        <img class="map-footer"  src="./icons/facebook-blue-logo.svg" alt="logo facebook" height="38px" width="38px">
+        <span class="menu-lang-adress-tel color-tel"> 0800 211 927</span>
+        <span class="map">contact@forstudy.space</span>
+        <span class="copyright" style="margin: 0;">© 2021 HLEGAL Law company, LLC</span>
+    </div>
+</footer>
+  <!-- MOBILE RESOLUTION FOOTER END -->
+    
+</body>
+</html>
