@@ -11,7 +11,7 @@ import { getPhotos } from "./services/getPhotos";
 import reportWebVitals from './reportWebVitals';
 
 
-const router = createBrowserRouter(
+const router = createBrowserRouter([
   
     {
       path: "/",
@@ -28,6 +28,7 @@ const router = createBrowserRouter(
       element: <Photos />,
       loader: getPhotos,
     },
+]   
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
