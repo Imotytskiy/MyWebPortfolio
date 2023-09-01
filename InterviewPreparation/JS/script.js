@@ -1,6 +1,7 @@
 // SOLID
 
 // Single Responsibility Principle
+// Every class for one reponibility
 
 class Book {
     constructor(title, author, content){
