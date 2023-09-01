@@ -14,17 +14,17 @@ import reportWebVitals from './reportWebVitals';
 const router = createBrowserRouter([
   
     {
-      path: "/",
+      path: "./",
       element: <Users />,
       loader: getUsers,
     },
     {
-      path: "/albums/:albumId",
+      path: "./albums/:albumId",
       element: <Albums />,
       loader: getAlbums,
     },
     {
-      path: "/albums/:albumId/photos",
+      path: "./albums/:albumId/photos",
       element: <Photos />,
       loader: getPhotos,
     },
