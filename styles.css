@@ -25,3 +25,45 @@ a {
   color: whitesmoke;
   text-decoration: none;
 }
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+   background-color: #E5E5E5;
+}
+section{
+   display: flex;
+   justify-content: center;
+   margin: 100px;
+}
+.card {
+   display: inline-block;
+   width: 200px;
+   height: 226px;
+   background: #E0E0E0;
+   border: 0px;
+   text-align: center;
+   margin: 30px;
+}
+
+img {
+   width: 130px;
+   height: 130px;
+}
+
+h4{
+   font-family: 'Roboto', sans-serif;
+   text-align: center;
+}
+
+span{
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 14px;
+text-align: center;
+}
