@@ -29,7 +29,7 @@ const router = createBrowserRouter([
       loader: getPhotos,
     },
 ], 
-{ basename : '/Routing/' }  
+{ basename : '/Routing' }  
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
