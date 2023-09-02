@@ -50,16 +50,16 @@ function App() {
   НІЧ
 </div>
       <CssBaseline />
-      <div className="wrapper">
-        <h1>todo-list</h1>
-        <TodoList todos={todos} buttonDelClick={buttonDelClick} />
-      </div>
       <div>
         <ButtonAdd
           buttonClick={buttonClick}
           inputValue={inputValue}
           setInputValue={setInputValue}
         />
+      </div>
+      <div className="wrapper">
+        <h1>todo-list</h1>
+        <TodoList todos={todos} buttonDelClick={buttonDelClick} />
       </div>
       </ThemeProvider>
     </>
