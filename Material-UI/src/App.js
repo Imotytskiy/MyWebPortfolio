@@ -50,7 +50,8 @@ function App() {
   НІЧ
 </div>
       <CssBaseline />
-      <div>
+      <div className="wrapper">
+      <h1>todo-list</h1>
         <ButtonAdd
           buttonClick={buttonClick}
           inputValue={inputValue}
@@ -58,7 +59,6 @@ function App() {
         />
       </div>
       <div className="wrapper">
-        <h1>todo-list</h1>
         <TodoList todos={todos} buttonDelClick={buttonDelClick} />
       </div>
       </ThemeProvider>

@@ -12,9 +12,9 @@ code {
     monospace;
 }
 .wrapper {
-  padding-top: 5rem;
+  padding-top: 3rem;
   margin: 0 auto;
-  width: 650px;
+  width: 750px;
 }
 .switcher{
   float: right;
