@@ -22,48 +22,64 @@ body {
   color: #fff;
 }
 a {
-  color: whitesmoke;
+  color: darkcyan;
   text-decoration: none;
 }
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+body {
+  background-image: linear-gradient(to right, #6A82FB, #FC5C7D);
+  color: #fff;
+}
 
-body{
-   background-color: #E5E5E5;
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px;
 }
-section{
-   display: flex;
-   justify-content: center;
-   margin: 100px;
-}
+
 .card {
-   display: inline-block;
-   width: 200px;
-   height: 226px;
-   background: #E0E0E0;
-   border: 0px;
-   text-align: center;
-   margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 25px;
+  transition: transform .2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 img {
-   width: 130px;
-   height: 260px;
+  width: 160px;
+  height: 260px;
+  border-radius: 10px;
 }
 
-h4{
-   font-family: 'Roboto', sans-serif;
-   text-align: center;
+h4 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  color: #333; /* Darker text to stand out on light background */
 }
 
-span{
-font-family: 'Roboto', sans-serif;
-font-weight: 400;
-font-size: 14px;
-text-align: center;
+span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #555; /* Darker text to stand out on light background */
 }
