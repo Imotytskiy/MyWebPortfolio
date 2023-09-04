@@ -37,6 +37,10 @@ body {
   color: #fff;
 }
 
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
 section {
   display: flex;
   flex-wrap: wrap;
